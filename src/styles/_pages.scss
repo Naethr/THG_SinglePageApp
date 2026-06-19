@@ -1,0 +1,135 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.list-hero {
+  max-width: 760px;
+
+  .eyebrow {
+    color: $color-accent-dark;
+    font-family: $font-family-mono;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin: 0 0 $space-sm;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: $font-size-hero;
+    line-height: 0.96;
+    margin: 0;
+  }
+
+  p:last-child {
+    color: $color-muted;
+    font-size: $font-size-lg;
+    line-height: 1.5;
+    margin: $space-lg 0 0;
+  }
+}
+
+.detail-page {
+  display: grid;
+  gap: $space-xl;
+}
+
+.detail-hero {
+  align-items: end;
+  display: grid;
+  gap: $space-xl;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-back {
+  color: $color-muted;
+  display: inline-block;
+  margin-bottom: $space-lg;
+}
+
+.detail-hero__content {
+  h1 {
+    font-size: $font-size-hero;
+    line-height: 0.96;
+    margin: 0;
+  }
+}
+
+.detail-date {
+  color: $color-muted;
+  font-size: $font-size-lg;
+}
+
+.detail-rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-top: $space-lg;
+
+  span {
+    @include surface;
+    font-family: $font-family-mono;
+    padding: $space-sm $space-md;
+  }
+}
+
+.detail-hero__image {
+  @include surface;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  width: 100%;
+}
+
+.detail-section {
+  @include surface;
+  padding: $space-xl;
+
+  h2 {
+    font-size: $font-size-lg;
+    margin: 0 0 $space-md;
+  }
+
+  p {
+    color: $color-muted;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 78ch;
+  }
+}
+
+.detail-grid {
+  display: grid;
+  gap: $space-lg;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-video {
+  aspect-ratio: 16 / 9;
+  background: $color-text;
+  border-radius: $radius-md;
+  width: 100%;
+}
+
+.screenshot-grid {
+  display: grid;
+  gap: $space-md;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    border-radius: $radius-sm;
+    object-fit: cover;
+    width: 100%;
+  }
+}

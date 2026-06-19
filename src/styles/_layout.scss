@@ -1,0 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.site-header {
+  align-items: center;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $container-width;
+  padding: $space-lg $space-xl;
+
+  @include mobile {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: $space-md;
+    padding: $space-md;
+  }
+}
+
+.brand {
+  align-items: center;
+  display: inline-flex;
+  font-size: $font-size-lg;
+  font-weight: 800;
+  gap: $space-sm;
+}
+
+.brand__mark {
+  background: $color-accent;
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.site-nav {
+  color: $color-muted;
+  font-size: $font-size-sm;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: $container-width;
+  padding: $space-2xl $space-xl;
+
+  @include mobile {
+    padding: $space-xl $space-md;
+  }
+}

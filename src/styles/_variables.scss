@@ -1,0 +1,36 @@
+$color-bg: #f5f3ee;
+$color-surface: #fffdf8;
+$color-surface-strong: #ebe5da;
+$color-text: #1f2328;
+$color-muted: #6b6f76;
+$color-border: #d9d2c6;
+$color-accent: #ba4a35;
+$color-accent-dark: #8f3627;
+$color-error-bg: #fff0ed;
+$color-error: #9c2f21;
+
+$font-family-base: 'Outfit', 'Avenir Next', 'Segoe UI', sans-serif;
+$font-family-mono: 'SFMono-Regular', 'Consolas', monospace;
+
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 2rem;
+$font-size-hero: clamp(2.25rem, 6vw, 4.75rem);
+
+$space-xs: 0.5rem;
+$space-sm: 0.75rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+$space-2xl: 3rem;
+
+$radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1rem;
+
+$breakpoint-sm: 520px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1080px;
+
+$container-width: 1180px;
