@@ -1,4 +1,4 @@
-# RAWG Games Explorer
+# Game Explorer
 
 Webpack SPA built with vanilla JavaScript and SCSS to browse video games through the RAWG API.
 
